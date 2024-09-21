@@ -1,0 +1,131 @@
+:root {
+  --cor-fundo-pagina: #fff;
+  --cor-fundo-menu: #ecebeb;
+  --cor-texto: #000;
+  --cor-fundo-botao: #3267f8;
+  --cor-texto-botao: #fff;
+  --cor-fundo-botao-hover: #0000cc;
+  --cor-texto-hover: #fff000;
+  --cor-border: #ccc;
+  --cor-fundo-cinza: #f5f5f5;
+}
+
+body {
+  background-color: var(fundo-pagina);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(cor-texto);
+  margin: 0;
+  padding: 0;
+}
+
+.barra-superior {
+  background-color: var(cor-fundo-menu);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.barra-superior h2 {
+  margin: 0;
+}
+.barra-superior .menu {
+  display: flex;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  margin-right: 20px;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+}
+.container h1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-central {
+  background-color: var(--cor-fundo-cinza);
+  text-align: left;
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid var(--cor-border);
+}
+
+.card-central button {
+  background-color: var(--cor-fundo-botao);
+  color: var(--cor-texto-botao);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.card-central button:hover {
+  background-color: var(--cor-fundo-botao-hover);
+  color: var(--cor-texto-hover);
+}
+
+.local-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  border: 1px solid var(--cor-border);
+  border-radius: 5px;
+  margin: 10px;
+  text-align: left;
+}
+
+.card .card-inferior {
+  padding: 20px;
+}
+
+.card .card-inferior button {
+  width: 150px;
+  height: 50px;
+  background-color: var(--cor-fundo-botao);
+  color: var(--cor-texto-botao);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card .card-inferior button:hover {
+  background-color: var(--cor-fundo-botao-hover);
+  color: var(--cor-texto-hover);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 120px;
+  margin: 80px;
+}
+
+.card-infor {
+  text-align: left;
+  padding: 10px;
+  height: 50px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
